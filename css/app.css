@@ -1,0 +1,806 @@
+/*Global*/
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #d8d8d8;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Variables*/
+:root{
+    --fw-bold: 700;
+    --fw-light: 300;
+    --fs-default: 50px;
+    --fs-default-secondary: 30px;
+    --fs-mobile: 25px;
+    --fs-mobile-secondary: 18px;
+
+    --cl-green: #2EFF7C;
+    --cl-secondaryBG:#f5f5f5;
+}
+
+/*Versao mobile*/
+@media(max-width:1024px){
+    @media(min-width:320px){
+        .musico{
+            width: 250px !important;
+        }
+
+        .content {
+            margin: 0px 5px 0px 60px !important;
+        }
+
+        .content-header{
+            height: 95px !important;
+        }
+
+        .content-header h1 {
+            color: black !important;
+            font-size: 24px !important;
+            font-weight: var(--fw-bold) !important;
+        }
+
+        .perfect-circle.profile {
+            width: 50px !important;
+            height: 50px !important;
+        }
+
+        .header-wrapper i {
+            margin-right: 10px !important;
+            font-size: 25px !important;
+        }
+
+        .search-bar input::placeholder{
+            opacity: 0 !important;
+        }
+
+        .musicos-wrapper{
+            flex-direction: column;
+        }
+
+        .musicos footer i{
+            left: 35% !important;
+        }
+    }
+
+    @media(min-width:360px){
+        .musico{
+            width: 286px !important;
+        }
+    }
+
+    @media(min-width:375px){
+        .musico{
+            width: 300px !important;
+        }
+    }
+
+    @media(min-width:411px){
+        .musico{
+            width: 340px !important;
+        }
+    }
+
+    @media(min-width:768px){
+        .musicos-wrapper{
+            flex-direction: row !important;
+        }
+
+        .musico{
+            width: 220px !important;
+        }
+
+        .musicos footer i{
+            left: 45% !important;
+        }
+    }
+
+    @media(min-width:1024px){
+        .musico{
+            width: 290px !important;
+        }
+    }
+}
+
+/*SIDE BAR*/
+@media(max-width:1300px){
+    .app{
+        position: relative !important;
+        box-shadow: 0 !important;
+        transform: unset !important; top: 0 !important; left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 0 !important;   
+    }
+
+    .sidebar.close_{
+        left: 0 !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+        width: 47px !important;
+    }
+
+    .wrap-sidebar{
+        margin-left: 8px !important;
+    }
+
+    .wrap-sidebar i{
+        font-size: 30px !important;
+    }
+}
+
+/*VERSAO DESKTOP*/
+
+/*Container*/
+.app{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.267);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: var(--cl-secondaryBG);
+    overflow-x: hidden;
+}
+
+/*Side bar closed*/
+#sidebar{
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+#toggle-open{
+    cursor: pointer;
+}
+
+#toggle-open i{
+    transition: 0.5s;
+}
+
+#toggle-open i.rotate{
+    transform: rotate(90deg);
+}
+
+.sidebar p{
+    font-weight: var(--fw-bold);
+}
+
+.sidebar.close_{
+    top: 50%;
+    left: 9%;
+    transform: translate(0%, -50%);
+    position: fixed;
+    background-color: var(--cl-green);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    min-height: 90%;
+    width: 90px;
+    overflow-x: hidden;
+}
+
+.sidebar.close_.opened{
+    width: 390px !important;
+}
+
+.wrap-sidebar{
+    cursor: pointer;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.wrap-sidebar a{
+    font-weight: var(--fw-bold);
+    margin-top: -2px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.wrap-sidebar a:hover{
+    color: white;
+}
+
+.wrap-sidebar i{
+    font-size: 40px;
+    margin-right: 40px;
+    transition: 0.3s;
+}
+
+.wrap-sidebar:hover{
+    color: white;
+}
+
+/*CONTENT*/
+
+.content{
+    margin: 0px 50px 0px 130px;
+}
+/* HEADER */
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.right{
+    float: right;
+}
+
+.content-header h1{
+    color: black;
+    font-size: var(--fs-default);
+    font-weight: var(--fw-bold);
+}
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper i{
+    margin-right: 20px;
+    font-size: var(--fs-default-secondary);
+}
+
+.perfect-circle{
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.perfect-circle.profile{
+    width: 70px;
+    height: 70px;
+}
+
+.perfect-circle img{
+    width: auto;
+    height: 100%;
+}
+
+/*SEARCH BAR*/
+
+.search-bar{
+    width: 100%;
+    position: relative;
+}
+
+.search-bar input{
+    width: 100%;
+    height: 65px;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.search-bar input::placeholder{
+    font-size: var(--fs-default-secondary);
+    font-weight: var(--fw-light);
+}
+
+.search-bar input:focus{
+    outline: none;
+    background-color: #d8d8d8;
+}
+
+.search-bar i{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*Musicos*/
+
+.musicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.musicos-wrapper{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.musico{
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 300px;
+    background-color: white;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.musico:hover{
+    opacity: 0.6;
+}
+
+.musico h1{
+    font-size: 30px;
+    font-weight: var(--fw-bold);
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.musico h2{
+    font-size: 20px;
+    font-weight: var(--fw-light);
+    color: #888888;
+}
+
+.musico-wrapper-attr{
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-weight: var(--fw-bold);
+}
+
+.musico-wrapper-attr-nomes{
+    width: 100%;
+    font: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #888888;
+}
+
+.musicos footer i{
+    position: relative;
+    left: 47%;
+    align-items: center;
+    font-size: 70px;
+}
+
+/*Mensagens*/
+
+/*MOBILE*/
+@media(max-width:1024px){
+    @media(min-width: 320px){
+        .chat{
+            opacity: 0;
+        }
+
+        .wrap-message{
+            margin-top: 20px !important;
+            margin-left: 0 !important;
+        }
+
+        .chat-text{
+            margin-left: 6px !important;
+            width: 190px !important;
+        }
+
+        .chat-text h3{
+            font-size: 13px !important;
+        }
+
+        .text h1{
+            font-size: 17px !important;
+        }
+
+        .text h3{
+            font-size: 14px !important;
+        }
+
+        .mensagem{
+            width: 244px !important;
+        }
+
+        .input-answer{
+            top: 367px !important;
+            width: 55% !important;
+        }
+
+        .input-field input{
+            height: 46px !important;
+        }
+
+        .input-field i{
+            top: 11px !important;
+        }
+
+        .plane{
+            font-size: 24px !important;
+            margin-right: 20px !important;
+            margin-top: 0 !important;
+        }
+    }
+    @media(min-width:320px) and (min-height:568px){
+        .input-answer{
+            top: 300px !important;
+        }
+    }
+
+    @media(min-width:360px){
+        .mensagem{
+            width: 286px !important;
+        }
+        
+        .input-answer{
+            width: 63% !important;
+        }
+    }
+
+    @media(min-width:375px) and (min-height:812px){
+        .input-answer{
+            top: 535px !important;
+        }
+    }
+
+    @media(min-width:411px){
+        .mensagem{
+            width: 338px !important;
+        }
+
+        .input-answer{
+            width: 76% !important;
+            top: 460px !important;
+        }
+    }
+
+    @media(min-height:823px) and (min-width: 411px){
+        .input-answer{
+            top: 500px !important;
+        }
+    }
+
+    @media(min-width:768px){
+        .input-answer{
+            width: 108% !important;
+            top: 750px !important;
+        }
+
+        .chat-text{
+            width: 380px !important;
+            margin-left: 10px !important;
+        }
+
+        .mensagem{
+            width: 692px !important;
+        }
+    }
+
+    @media(min-width: 1024px){
+        .mensagem{
+            width: 950px !important;
+        }
+        .input-answer{
+            width: 145% !important;
+            top: 1100px !important;
+        }
+    }
+
+    @media(min-width: 1024px) and (min-height:1034px){
+        .mensagem{
+            width: 950px !important;
+        }
+        .input-answer{
+            width: 145% !important;
+            top: 750px !important;
+        }
+    }
+}
+
+.back{
+    position: relative;
+    opacity: 1;
+    font-size: 30px;
+    color: #858585
+}
+
+.chat-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mensagens{
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagem{
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.mensagem h1{
+    font-size: var(--fs-default-secondary);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0;
+}
+
+.mensagem h3{
+    font-size: var(--fs-mobile);
+}
+
+.text{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrap-message{
+    margin-right: 200px;
+    margin-top: -25px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.chat-text{
+    margin-left: 30px;
+    display: flex;
+    width: 300px;
+    background-color:#D5D5D5;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    align-items: center;
+}
+
+.chat-text h3{
+    font-size: var(--fs-mobile-secondary);
+}
+
+.input-answer{
+    position: relative;
+    width: 100%;
+    top: 280px;
+}
+
+.input-answer input{
+    padding-left: 40px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    height: 100px;
+}
+
+.input-answer input:focus{
+    outline: none;
+}
+.input-field i{
+    position: absolute;
+    top: 40px;
+}
+
+.smile{
+    left: 2px;
+    float: left;
+    font-size: 20px;
+    margin-left: 12px;
+    opacity: 0.5;
+    color: #9e9e9e;
+}
+
+.plane{
+    margin-top: -10px;
+    margin-right: 30px;
+    right: 2px;
+    float: right;
+    font-size: 40px;
+    color: var(--cl-green);
+}
+
+/*PROFILE*/
+
+/*Mobile*/
+@media(max-width:767px){
+    @media(min-width:320px){
+        .profile-wrapper .perfect-circle {
+            width: 80px !important;
+            height: 80px !important;
+            position: absolute !important;
+            border-radius: 10px !important;
+            box-shadow: 2px 5px 10px rgb(170, 170, 170) !important;
+            top: 30px !important;
+        }
+
+        .profile-sections{
+            flex-direction: column !important;
+        }
+
+        .profile-section h1{
+            font-size: 22px !important;
+        }
+
+        .profile-wrapper{
+            border-radius: 10px !important;
+            width: 249px !important;
+        }
+
+        .profile-wrapper .perfect-circle{
+            margin-left: -10px;
+        }
+
+        .wrap-text h1{
+            font-size: 20px !important; 
+        }
+
+        .wrap-text h3{
+            font-size: 14px !important;
+        }
+
+        .wrap-text{
+            margin-right: 23px !important;
+            margin-left: -7px !important;
+        }
+
+        .profile-wrapper i{
+            font-size: 30px !important;
+            margin-left: 13px !important;
+        }
+
+        .area{
+            width: 100% !important;
+            font-size: 15px !important;
+        }
+
+        .artistas{
+            flex-direction: column;
+        }
+
+        .artistas-section h1{
+            font-size: 20px !important;
+        }
+    }
+    @media(min-width: 411px){
+        .profile-wrapper{
+            margin-top: 86px !important;
+        }
+
+        .right{
+            margin-top: -90px !important;
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 769px){
+    .profile-wrapper{
+        width: 690px !important;
+    }
+
+    .profile-wrapper .perfect-circle {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .profile-section .area {
+        width: 333px !important;
+        height: 250px !important;
+    }
+}
+
+.profile-wrapper{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 300px;
+    padding: 20px;
+    width: 800px;
+}
+
+.edit{
+    cursor: pointer;
+}
+
+.profile-wrapper .perfect-circle{
+    width: 200px;
+    height: 200px;
+}
+
+.wrap-text{
+    text-align: left;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.wrap-text h1{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-default);
+    margin-bottom: 0;
+}
+
+.profile-wrapper i{
+    font-size: 70px;
+    color: var(--cl-green);
+    margin-left: 20px;
+}
+
+.profile-sections{
+    display: flex;
+    justify-content: space-between;
+}
+
+.area{
+    background-color:#D4D4D4;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.profile-section .area{
+    width: 400px;
+    height: 250px;
+}
+
+.profile-section h1{
+    font-weight: var(--fw-bold);
+}
+
+.area.error{
+    background-color:#D4D4D4;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+}
+
+.area{
+    font-size: 24px;
+}
+
+.area.error{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.artistas-section h1{
+    font-weight: var(--fw-bold);
+}
+
+.artistas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artista{
+    align-items: center;
+    text-align: center;
+}
+
+.artista h3{
+    font-weight: var(--fw-bold);
+}
+
+
+
+
+

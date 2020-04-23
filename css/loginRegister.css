@@ -1,0 +1,134 @@
+/*Global*/
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: url(../image/img3.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Variables*/
+
+:root{
+    --ff-primary: 'Nunito', sans-serif;
+    --fw-bold: 700;
+    --fw-light: 300;
+    --fs-default: 50px;
+    --fs-default-secondary: 30px;
+    --fs-mobile: 25px;
+    --fs-mobile-secondary: 18px;
+
+    --cl-green: #2EFF7C;
+    --cl-secondaryBG: rgb(66, 66, 66);
+}
+
+/*Media queries*/
+@media(max-width:375px){
+    .register{
+        height: 100vh !important;
+    }
+
+    .wrapper-campo input{
+        width: 90% !important;
+    }
+
+    .form-wrap{
+        position: absolute;
+        width: 100% !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Wrapper */
+.form-wrap{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: white;
+
+}
+
+/* Estilizacoes box form*/
+
+.form-wrap form{
+    margin-top: -20px;
+    padding: 40px;
+    background-color: white;
+}
+
+.form-wrap button{
+    background-color: var(--cl-green);
+    color: black;
+    border: none;
+}
+
+.form-wrap button:hover{
+    background-color: var(--cl-secondaryBG);
+    color: white;
+}
+
+.wrapper-campo{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Barra de cima*/
+
+.bar{
+    padding: 20px;
+    width: 100%;
+    background-color: #2f2f2f;
+}
+
+.group-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-bar h1{
+    color: white;
+    font-weight: var(--fw-bold);
+}
+
+.group-bar i{
+    font-size: 30px;
+}
+
+.group-bar a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.group-bar a:hover{
+    color: var(--cl-green);
+    text-decoration: none;
+}
+
+/*Register*/
+
+.register{
+    width: 500px;
+    height: 600px;
+}
+

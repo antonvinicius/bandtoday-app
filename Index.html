@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/359e5b60d7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./image/headphones-solid.svg" type="image/x-icon">
+    <title>Band Today</title>
+</head>
+
+<body>
+    <div id="app" class="app">
+        <!--Header-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./Index.html">BandToday</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item pr-5">
+                            <a class="nav-link" href="#como-funciona">Como funciona?</a>
+                        </li>
+                        <li class="nav-item pr-5">
+                            <a class="nav-link" href="#quem-somos">Quem somos?</a>
+                        </li>
+                        <li class="nav-item pr-5">
+                            <a class="nav-link" href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <span>
+                        <button id="button-login" class="button-login rounded-pill" onclick="goLogin()">
+                            Login
+                        </button>
+                    </span>
+                </div>
+            </nav>
+
+            <!--Jumbotron-->
+            <div class="container-fluid jumbotron-section">
+                <div class="jumbotron jumbotron-fluid jumbotron-with-background rounded-0">
+                    <div class="bg"></div>
+                    <div class="center-items">
+                        <h1 class="display-4 bold cl-white">Forme sua banda hoje mesmo!</h1>
+                        <p class="lead paragraph cl-white">O BandToday conecta você com os músicos mais próximos<br>
+                            da sua localização.</p>
+                        <a class="btn btn-lg rounded-pill color-green" href="./register.html" role="button"><strong
+                                class="ex-bold">Forme
+                                sua
+                                banda</strong></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Enfeite-->
+        <section class="enfeite-section">
+            <i class="fas fa-drum enfeite-icon"></i>
+            <div class="line"></div>
+            <i class="fas fa-guitar enfeite-icon"></i>
+            <div class="line"></div>
+            <i class="fas fa-record-vinyl enfeite-icon"></i>
+        </section>
+
+        <!--Banner-->
+        <section class="container-fluid banner" id="como-funciona">
+            <div class="overlay"></div>
+            <img src="./image/img2.jpg" alt="Banner">
+            <div class="banner-mobile"></div>
+            <div class="container banner-content">
+                <h1 class="section-title display-4 bold cl-white">Como Funciona?</h1>
+                <div class="group cl-white">
+                    <i class="fas fa-user-plus icon"></i>
+                    <h3 class="section-subtitle bold">Registre-se em<br>nosso site</h3>
+                </div>
+                <div class="group cl-white">
+                    <i class="fas fa-wifi icon"></i>
+                    <h3 class="section-subtitle bold">Conecte-se com<br>outros músicos</h3>
+                </div>
+                <div class="group cl-white">
+                    <i class="fas fa-users icon"></i>
+                    <h3 class="section-subtitle bold">Reúna-se com<br>seus novos amigos</h3>
+                </div>
+                <div class="group cl-white">
+                    <i class="fas fa-smile-wink icon"></i>
+                    <h3 class="section-subtitle bold">Toque com a galera</h3>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!--Quem somos-->
+        <section class="quem-somos" id="quem-somos">
+            <div class="quem-somos-content">
+                <h1 class="quem-somos-title bold" style="text-align: justify;  padding: 20px;">Nós somos um grupo de músicos como <span
+                        style="color: #2EFF7C;">você</span>
+                    <br>que
+                    pensou como podia ajudar aqueles
+                    que<br>ainda não possuem uma banda. </h1>
+                <h3 class="quem-somos-subtitle" style="text-align: justify; padding: 20px;">No ano de 2015, nós, da BandToday tínhamos um sonho de ter uma banda
+                    porém nunca<br>conseguimos ter membros suficientes. Fizemos um som é claro mas não
+                    conseguimos<br>levar
+                    a ideia para frente. Você pode fazer diferente! Acreditamos em você e damos a você<br>esta
+                    ferramenta
+                    incrível que permite você conectar-se aos músicos mais perto<br>de você para que então, você tenha a
+                    sua
+                    banda dos sonhos.
+                </h3>
+                <button class="btn rounded-pill color-green botao">
+                    <a href="./contato.html" class="login-text"><strong>Entre em contato</strong></a>
+                </button>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-items">
+                <div class="arrow">
+                    <a href="#">
+                        <i class="fas fa-arrow-alt-circle-up"></i>
+                    </a>
+                </div>
+                <div class="footer-wrapper">
+                    <div class="footer-group">
+                        <h3 class="bold cl-white">Pronto para começar?</h3>
+                        <button class="btn rounded-pill color-green btn-full" onclick="goRegister()">
+                            <a href="#" class="login-text bold">Registre-se</a>
+                        </button>
+                    </div>
+                    <div class="footer-group">
+                        <h3 class="cl-white bold">Contato</h3>
+                        <div class="icon-group">
+                            <i class="fas fa-envelope"></i>
+                            <p class="cl-white">bandtoday@contact.com</p>
+                        </div>
+                        <div class="icon-group">
+                            <i class="fas fa-phone"></i>
+                            <p class="cl-white">(65) 4525-6589</p>
+                        </div>
+                        <div class="icon-group">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p class="cl-white">Rua do contorno, 2724 - Porto Riquinho - BR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                </div>
+
+                <hr>
+                <div class="credits">
+                    <p class="footer-dev">2020 Antônio Vinícius</p>
+                    <p class="footer-terms"><a class="cl-white" href="#">Termos |</a> <a class="cl-white" href="#">
+                            Privacidade</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function goLogin(){
+            window.location.href = "login.html";
+        }
+
+        function goRegister(){
+            window.location.href = "register.html";
+        }
+    </script>
+
+</body>
+
+</html>

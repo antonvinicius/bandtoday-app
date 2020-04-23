@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/loginRegister.css">
+    <script src="https://kit.fontawesome.com/359e5b60d7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/headphones-solid.svg" type="image/x-icon">
+    <title>Registrar</title>
+</head>
+
+<body>
+    <div class="form-wrap register">
+        <div class="bar">
+            <div class="group-bar">
+                <h1>Registrar</h1>
+                <a href="./Index.html"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+        <form action="POST">
+            <div class="wrapper-campo">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="nome" required placeholder="Digite seu nome" class="form-control" id="nome">
+                </div>
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="sobrenome" placeholder="Digite seu sobrenome" class="form-control" id="nome">
+                </div>    
+            </div>
+            <div class="form-group">
+                <label for="data">Data de nascimento</label>
+                <input type="date" required class="form-control" id="data">
+            </div>
+            <div class="form-group">
+                <select required class="custom-select">
+                    <option selected value="">Qual seu instrumento principal?</option>
+                    <option value="1">Guitarra</option>
+                    <option value="2">Bateria</option>
+                    <option value="3">Baixo</option>
+                    <option value="3">Teclado</option>
+                    <option value="3">Vocal</option>
+                  </select>
+            </div> 
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" required placeholder="Digite seu email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" required placeholder="Digite sua senha" class="form-control" id="password">
+            </div>
+            <p>Ao registrar, você concorda com os termos de privacidade do Band Today</p>
+            <button type="text" class="btn btn-primary" onclick="goApp()">Registrar</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        function goApp(){
+            window.location.href = "appIndex.html";
+        }
+    </script>
+</body>
+
+</html>

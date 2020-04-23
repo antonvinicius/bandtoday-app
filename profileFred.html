@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/359e5b60d7.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/headphones-solid.svg" type="image/x-icon">
+    <title>Fred Batista</title>
+</head>
+
+<body>
+    <!--SideMenu-->
+    <nav class="sidebar close_" id="sidebar">
+        <div class="wrap-sidebar" id="toggle-open">
+            <i class="fas fa-bars"></i>
+            <a href="#">Menu</a>
+        </div>
+        <div class="wrap-sidebar" id="index">
+            <i class="fas fa-th-large"></i>
+            <a href="#">Encontrar músicos</a>
+        </div>
+        <div class="wrap-sidebar" id="mensagens">
+            <i class="fas fa-envelope"></i>
+            <a href="#">Mensagens</a>
+        </div>
+        <div class="wrap-sidebar" id="perfil">
+            <i class="fas fa-user"></i>
+            <a href="#">Perfil</a>
+        </div>
+        <div class="wrap-sidebar" id="sair">
+            <i class="fas fa-power-off"></i>
+            <a href="#">Sair</a>
+        </div>
+    </nav>
+    <div class="app" id="app">
+        <!--Content-->
+        <div class="content">
+            <header class="right">
+                <div class="content-header">
+                    <div class="header-wrapper">
+                        <i class="fas fa-bell"></i>
+                        <div class="perfect-circle profile dropdown dropleft" data-toggle="dropdown">
+                            <img src="./image/people/profile.jpg" class="dropdown-toggle" alt="">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="appPerfil.html">Perfil</a>
+                            <a class="dropdown-item" href="#">Configurações</a>
+                            <a class="dropdown-item" href="#">Privacidade</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Perfil-->
+            <section>
+                <header>
+                    <div class="profile-wrapper">
+                        <div class="perfect-circle">
+                            <img src="./image/people/5.jpg" style="margin-left: -25px;" alt="Musico">
+                        </div>
+                        <div class="wrap-text">
+                            <h1 style="font-size: 35px;">Fred Batista</h1>
+                            <h3>Guitarra 🎸</h3>
+                        </div>
+                        <div class="wrap-text">
+                            <h1>62</h1>
+                            <h3>Likes</h3>
+                        </div>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </header>
+                <div class="profile-sections">
+                    <div class="profile-section">
+                        <h1>Biografia</h1>
+                        <div class="area">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem vitae sequi,
+                            dolorem eveniet nemo a architecto ratione quas! 🤙
+                        </div>
+                    </div>
+                    <div class="profile-section">
+                        <h1>Vídeo de apresentação</h1>
+                        <div class="area error">
+                            <iframe width="100%" height="100%" style="border-radius: 30px;" src="https://www.youtube.com/embed/91vFQExKpYQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="artistas-section">
+                    <h1>Artistas preferidos</h1>
+                    <div class="artistas">
+                        <div class="artista">
+                            <div class="perfect-circle">
+                                <img src="./image/band/pink.jpg" style="    height: 149% !important;
+                                margin-top: -11px !important;
+                                margin-left: -32px;" alt="">
+                            </div>
+                            <h3>Pink Floyd</h3>
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="artista">
+                            <div class="perfect-circle">
+                                <img src="./image/band/acd.jpg" alt="">
+                            </div>
+                            <h3>AC / DC</h3>
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="artista">
+                            <div class="perfect-circle">
+                                <img src="./image/band/guns.jpg" style="margin-left: -13px;" alt="">
+                            </div>
+                            <h3>Guns N Roses</h3>
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="artista">
+                            <div class="perfect-circle">
+                                <img src="./image/band/coldplay.jpg" style="margin-left: -25px;
+                                height: 95%;
+                                margin-top: 2px;" alt="">
+                            </div>
+                            <h3>Coldplay</h3>
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        const toggle = document.querySelector("#toggle-open i");
+        const sidebar = document.querySelector("#sidebar");
+        document.querySelector("#toggle-open").addEventListener('click', (e) => {
+            document.querySelector("#app").addEventListener('click', () => {
+                if (sidebar.classList.value == "sidebar close_ opened") {
+                    sidebar.classList.toggle("opened");
+                    toggle.classList.toggle("rotate");
+                }
+            })
+            sidebar.classList.toggle("opened");
+            toggle.classList.toggle("rotate");
+        })
+
+        document.querySelector("#index").addEventListener("click", () => {
+            window.location.href = "appIndex.html";
+        })
+
+        document.querySelector("#mensagens").addEventListener("click", () => {
+            window.location.href = "appMensagens.html";
+        })
+
+        document.querySelector("#perfil").addEventListener("click", () => {
+            window.location.href = "appPerfil.html";
+        })
+
+        document.querySelector("#sair").addEventListener("click", () => {
+            console.log("hello")
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+
+</html>

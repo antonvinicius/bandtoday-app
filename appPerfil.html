@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/359e5b60d7.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/headphones-solid.svg" type="image/x-icon">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <!--SideMenu-->
+    <nav class="sidebar close_" id="sidebar">
+        <div class="wrap-sidebar" id="toggle-open">
+            <i class="fas fa-bars"></i>
+            <a href="#">Menu</a>
+        </div>
+        <div class="wrap-sidebar" id="index">
+            <i class="fas fa-th-large"></i>
+            <a href="#">Encontrar músicos</a>
+        </div>
+        <div class="wrap-sidebar" id="mensagens">
+            <i class="fas fa-envelope"></i>
+            <a href="#">Mensagens</a>
+        </div>
+        <div class="wrap-sidebar" id="perfil">
+            <i class="fas fa-user"></i>
+            <a href="#">Perfil</a>
+        </div>
+        <div class="wrap-sidebar" id="sair">
+            <i class="fas fa-power-off"></i>
+            <a href="#">Sair</a>
+        </div>
+    </nav>
+    <div class="app" id="app">
+        <!--Content-->
+        <div class="content">
+            <header class="right">
+                <div class="content-header">
+                    <div class="header-wrapper">
+                        <i class="fas fa-bell"></i>
+                        <div class="perfect-circle profile dropdown dropleft" data-toggle="dropdown">
+                            <img src="./image/people/profile.jpg" class="dropdown-toggle" alt="">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="#">Configurações</a>
+                            <a class="dropdown-item" href="#">Privacidade</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Perfil-->
+            <section>
+                <header>
+                    <div class="profile-wrapper">
+                        <div class="perfect-circle">
+                            <img src="./image/people/profile.jpg" alt="">
+                        </div>
+                        <div class="wrap-text">
+                            <h1>Vinícius</h1>
+                            <h3>Guitarra</h3>
+                        </div>
+                        <div class="wrap-text">
+                            <h1>24</h1>
+                            <h3>Likes</h3>
+                        </div>
+                        <i class="fas fa-user-edit edit" style="color:black" data-toggle="modal"
+                            data-target="#perfilmodal"></i>
+                    </div>
+                </header>
+                <div class="profile-sections">
+                    <div class="profile-section">
+                        <h1>Biografia <i class="fas fa-edit edit" data-toggle="modal" data-target="#biografia"></i></h1>
+                        <div class="area error">
+                            Woops! o músico não tem
+                            uma biografia
+                        </div>
+                    </div>
+                    <div class="profile-section">
+                        <h1>Vídeo de apresentação <i class="fas fa-edit edit" data-toggle="modal"
+                                data-target="#videoapresentacao"></i></h1>
+                        <div class="area error">
+                            Woops! o músico não tem
+                            um vídeo de apresentação
+                        </div>
+                    </div>
+                </div>
+                <div class="artistas-section">
+                    <h1>Artistas preferidos <i class="fas fa-edit edit" data-toggle="modal" data-target="#artista"></i>
+                    </h1>
+                    <div class="artistas area error" style="margin-bottom: 20px;">
+                        Woops! o músico não tem artistas preferidos
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <!--MODALS-->
+    <!--Biografia-->
+    <div class="modal fade" id="biografia" tabindex="-1" role="dialog" aria-labelledby="biografiaTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="biografiaTitle">
+                        <h3>Insira sua biografia</h3>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea name="text" id="bio" rows="7" class="form-control"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #2EFF7C; color: black; border: none; font-weight: 800;"
+                        data-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video apresentacao-->
+    <div class="modal fade" id="videoapresentacao" tabindex="-1" role="dialog" aria-labelledby="videoapresentacaoTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoapresentacaoTitle">
+                        <h3>Envie seu vídeo</h3>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="file">Escolha um arquivo</label>
+                    <input type="file" id="file">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #2EFF7C; color: black; border: none; font-weight: 800;"
+                        data-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Artista-->
+    <div class="modal fade" id="artista" tabindex="-1" role="dialog" aria-labelledby="artistaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artistaTitle">
+                        <h3>Artistas Preferidos</h3>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="search-bar">
+                        <input type="text" style="width: 100%;" placeholder="Digite o nome do artista">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #2EFF7C; color: black; border: none; font-weight: 800;"
+                        data-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Perfil-->
+    <div class="modal fade" id="perfilmodal" tabindex="-1" role="dialog" aria-labelledby="perfilTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="perfilTitle">
+                        <h3>Alterar Perfil</h3>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Nome</label>
+                    <input type="text" class="form-control">
+                    <label for="">Instrumento</label>
+                    <input type="text" class="form-control">
+                    <label for="">Foto do perfil</label>
+                    <input type="file" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #2EFF7C; color: black; border: none; font-weight: 800;"
+                        data-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        const toggle = document.querySelector("#toggle-open i");
+        const sidebar = document.querySelector("#sidebar");
+        document.querySelector("#toggle-open").addEventListener('click', (e) => {
+            document.querySelector("#app").addEventListener('click', () => {
+                if (sidebar.classList.value == "sidebar close_ opened") {
+                    sidebar.classList.toggle("opened");
+                    toggle.classList.toggle("rotate");
+                }
+            })
+            sidebar.classList.toggle("opened");
+            toggle.classList.toggle("rotate");
+        })
+
+        document.querySelector("#index").addEventListener("click", () => {
+            window.location.href = "appIndex.html";
+        })
+
+        document.querySelector("#mensagens").addEventListener("click", () => {
+            window.location.href = "appMensagens.html";
+        })
+
+        document.querySelector("#perfil").addEventListener("click", () => {
+            window.location.href = "appPerfil.html";
+        })
+
+        document.querySelector("#sair").addEventListener("click", () => {
+            console.log("hello")
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+
+</html>

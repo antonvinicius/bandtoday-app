@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/359e5b60d7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./image/headphones-solid.svg" type="image/x-icon">
+    <title>Contato</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./Index.html">BandToday</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item pr-5">
+                    <a class="nav-link" href="./Index.html#como-funciona">Como funciona?</a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a class="nav-link" href="./Index.html#quem-somos">Quem somos?</a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a class="nav-link" href="./contato.html">Contato</a>
+                </li>
+            </ul>
+            <span>
+                <button id="button-login" class="button-login rounded-pill" onclick="goLogin()">
+                    Login
+                </button>
+            </span>
+        </div>
+    </nav>
+
+    <div class="contact">
+        <h1>Contato</h1>
+        <div class="contact-wrapper">
+            <div class="contact-explicativo">
+                <div class="explicativo-wrapper">
+                    <h1>Como entrar em contato?</h2>
+                        <h3>Você pode entrar em contato conosco diretamente pelo formulário abaixo. Desta forma, sua
+                            mensagem irá cair na nosso email e responderemos para você o mais breve possível.</h3>
+                </div>
+                <div class="explicativo-wrapper">
+                    <h1>Endereço Atual</h2>
+                        <h3>Endereço físico para suporte e atendimento presencial - Av. Rio Madeira, 3288 - Flodoaldo
+                            Pontes Pinto, Porto Velho - RO, 76820-408</h3>
+                </div>
+            </div>
+            <div class="container-fluid mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1394.201281354408!2d-63.876658339863646!3d-8.748691518797964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92325cb29a99d071%3A0x7dfd32c8871895ed!2sPorto%20Velho%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1587663867193!5m2!1spt-BR!2sbr"
+                    width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="contact-form">
+                <h1>Preencha o formulário</h1>
+                <h3>Nós adoraríamos saber o que você tem para nos contar 💚</h3>
+                <form>
+                    <label>Nome</label>
+                    <input type="text" class="form-control" placeholder="Digite seu nome">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Digite seu email">
+                    <label>Assunto</label>
+                    <input type="text" class="form-control" placeholder="Digite o assunto">
+                    <label>Mensagem</label>
+                    <textarea name="mensagem" class="form-control" id="mensagem" placeholder="Digite sua mensagem"
+                        rows="10"></textarea>
+                    <div class="form-group">
+                        <input name="" id="" class="btn btn-primary" type="submit" value="Enviar">
+                        <input name="" id="" class="btn btn-primary" type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-explicativo">
+                <div class="explicativo-wrapper">
+                    <h1>Quer outras alternativas?</h2>
+                        <h3>Aqui estão algumas formas extras de entrar em contato conosco caso você por acaso não tenha
+                            conseguido pelos métodos apresentados acima.</h3>
+                </div>
+                <div class="cards">
+                    <div class="card-contact">
+                        <i class="fab fa-discord"></i>
+                        <h2>Discord</h2>
+                    </div>
+                    <div class="card-contact">
+                        <i class="fas fa-phone-square"></i>
+                        <h2>0800-2454-2314</h2>
+                    </div>
+                    <div class="card-contact">
+                        <i class="fab fa-twitter-square"></i>
+                        <h2>Twitter</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Formulario
+    <div class="jumbotron rounded-0" style="height: 100vh; margin-bottom: 0; background-color: rgb(226, 226, 226);">
+        <div class="contact-wrapper">
+            <h1 class="display-4 bold">Contato</h1>
+            <p class="lead paragraph">Estamos ansiosos para saber o que você tem para nos contar.</p>
+        </div>
+        <div class="mycontainer">
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" class="form-control" id="assunto" placeholder="Digite o assunto">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="5" style="resize:vertical"
+                        placeholder="Digite sua mensagem" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn my-btn">Enviar</button>
+                <button type="reset" class="btn my-btn">Limpar</button>
+            </form>
+        </div>
+    </div>-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function goLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>

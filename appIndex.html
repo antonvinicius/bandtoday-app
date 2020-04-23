@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/359e5b60d7.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/headphones-solid.svg" type="image/x-icon">
+    <title>Encontre Músicos</title>
+</head>
+
+<body>
+    <!--SideMenu-->
+    <nav class="sidebar close_" id="sidebar">
+        <div class="wrap-sidebar" id="toggle-open">
+            <i class="fas fa-bars"></i>
+            <a href="#">Menu</a>
+        </div>
+        <div class="wrap-sidebar" id="index">
+            <i class="fas fa-th-large"></i>
+            <a href="#">Encontrar músicos</a>
+        </div>
+        <div class="wrap-sidebar" id="mensagens">
+            <i class="fas fa-envelope"></i>
+            <a href="#">Mensagens</a>
+        </div>
+        <div class="wrap-sidebar" id="perfil">
+            <i class="fas fa-user"></i>
+            <a href="#">Perfil</a>
+        </div>
+        <div class="wrap-sidebar" id="sair">
+            <i class="fas fa-power-off"></i>
+            <a href="#">Sair</a>
+        </div>
+    </nav>
+    <div class="app" id="app">
+        <!--Content-->
+        <div class="content">
+            <header>
+                <div class="content-header">
+                    <h1>Encontre músicos</h1>
+                    <div class="header-wrapper">
+                        <i class="fas fa-bell"></i>
+                        <div class="perfect-circle profile dropdown dropleft" data-toggle="dropdown">
+                            <img src="./image/people/profile.jpg" class="dropdown-toggle" alt="">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="appPerfil.html">Perfil</a>
+                            <a class="dropdown-item" href="#">Configurações</a>
+                            <a class="dropdown-item" href="#">Privacidade</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Digite aqui o nome do músico ou instrumento que ele toca">
+                    <i class="fas fa-search"></i>
+                </div>
+            </header>
+
+            <!--Musicos-->
+            <section class="musicos">
+                <div class="musicos-wrapper">
+                    <div class="musico" onclick="window.location.href = 'profileTony.html'">
+                        <div class="perfect-circle">
+                            <img src="./image/people/1.jpg" style="margin-left: -2px;
+                            height: 150%;" alt="Musico">
+                        </div>
+                        <h1>Marcus</h1>
+                        <h2>Guitarra</h2>
+                        <div class="musico-wrapper-attr">
+                            <h3>3.2Km</h3>
+                            <h3>45</h3>
+                        </div>
+                        <div class="div musico-wrapper-attr-nomes">
+                            <h3>Distância</h3>
+                            <h3>Likes</h3>
+                        </div>
+                    </div>
+                    <div class="musico" onclick="window.location.href = 'profileMarcus.html'">
+                        <div class="perfect-circle">
+                            <img src="./image/people/2.jpg" style="height: 150%;
+                            margin-top: -30px;" alt="Musico">
+                        </div>
+                        <h1>Marcus</h1>
+                        <h2>Bateria</h2>
+                        <div class="musico-wrapper-attr">
+                            <h3>1.2Km</h3>
+                            <h3>13</h3>
+                        </div>
+                        <div class="div musico-wrapper-attr-nomes">
+                            <h3>Distância</h3>
+                            <h3>Likes</h3>
+                        </div>
+                    </div>
+                    <div class="musico" onclick="window.location.href = 'profileLeticia.html'">
+                        <div class="perfect-circle">
+                            <img src="./image/people/3.jpg" style="height: 149%;
+                            margin-left: -2px;
+                            margin-top: -10px;" alt="Musico">
+                        </div>
+                        <h1>Letícia Stênio</h1>
+                        <h2>Vocal</h2>
+                        <div class="musico-wrapper-attr">
+                            <h3>5Km</h3>
+                            <h3>71</h3>
+                        </div>
+                        <div class="div musico-wrapper-attr-nomes">
+                            <h3>Distância</h3>
+                            <h3>Likes</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="musicos-wrapper">
+                    <div class="musico" onclick="window.location.href = 'profileKaleb.html'">
+                        <div class="perfect-circle">
+                            <img src="./image/people/7.jpg" style="height: 147%;
+                            margin-top: -14px;
+                            margin-left: -1px;" alt="Musico">
+                        </div>
+                        <h1>Kaleb</h1>
+                        <h2>Baixo</h2>
+                        <div class="musico-wrapper-attr">
+                            <h3>0.6Km</h3>
+                            <h3>30</h3>
+                        </div>
+                        <div class="div musico-wrapper-attr-nomes">
+                            <h3>Distância</h3>
+                            <h3>Likes</h3>
+                        </div>
+                    </div>
+                    <div class="musico" onclick="window.location.href='profileJordana.html'">
+                        <div class="perfect-circle">
+                            <img src="./image/people/4.jpg" style="margin-left: -25px;" alt="Musico">
+                        </div>
+                        <h1>Jordana</h1>
+                        <h2>Violão</h2>
+                        <div class="musico-wrapper-attr">
+                            <h3>0.9Km</h3>
+                            <h3>24</h3>
+                        </div>
+                        <div class="div musico-wrapper-attr-nomes">
+                            <h3>Distância</h3>
+                            <h3>Likes</h3>
+                        </div>
+                    </div>
+                    <div class="musico" onclick="window.location.href = 'profileFred.html'">
+                        <div class="perfect-circle">
+                            <img src="./image/people/5.jpg" style="margin-left: -25px;" alt="Musico">
+                        </div>
+                        <h1>Fred Batista</h1>
+                        <h2>Guitarra</h2>
+                        <div class="musico-wrapper-attr">
+                            <h3>2.3Km</h3>
+                            <h3>62</h3>
+                        </div>
+                        <div class="div musico-wrapper-attr-nomes">
+                            <h3>Distância</h3>
+                            <h3>Likes</h3>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <i class="fas fa-ellipsis-h"></i>
+                </footer>
+            </section>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        const toggle = document.querySelector("#toggle-open i");
+        const sidebar = document.querySelector("#sidebar");
+        document.querySelector("#toggle-open").addEventListener('click', (e) => {
+            document.querySelector("#app").addEventListener('click', () => {
+                if(sidebar.classList.value == "sidebar close_ opened"){
+                    sidebar.classList.toggle("opened");
+                    toggle.classList.toggle("rotate");
+                }
+            })
+            sidebar.classList.toggle("opened");
+            toggle.classList.toggle("rotate");
+        })
+
+        document.querySelector("#index").addEventListener("click", () => {
+            window.location.href = "appIndex.html";
+        })
+
+        document.querySelector("#mensagens").addEventListener("click", () => {
+            window.location.href = "appMensagens.html";
+        })
+
+        document.querySelector("#perfil").addEventListener("click", () => {
+            window.location.href = "appPerfil.html";
+        })
+
+        document.querySelector("#sair").addEventListener("click", () => {
+            console.log("hello")
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+
+</html>
